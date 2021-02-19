@@ -1,0 +1,24 @@
+
+
+*{
+    font-size: 16px;
+  
+}
+@media all and (max-width: 980px){
+aside {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-content: center;
+    align-content: space-around;
+}
+main article section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-content: space-around;
+}
+footer {
+    background-color: #f2f2f2;
+}
+}
