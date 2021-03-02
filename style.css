@@ -1,24 +1,78 @@
+:root {
+    font-size: 10px; /* 1rem */
+}
 
+.logo {
+    grid-area: logo;
+}
+.register {
+    grid-area: register;
+}
+.activities {
+    grid-area: activities;
+}
+.logement {
+    grid-area: logement;
+}
+.image1{
+    grid-area:image1;
+}
+.image2{
+    grid-area:image2;
+}
+.image3{
+    grid-area:image3;
+}
+.image4{
+    grid-area:image4;
+}
+.image5{
+    grid-area:image5;
+}
+.image6{
+    grid-area:image6;
+}
+.image7{
+    grid-area:image7;
+}
+.image8{
+    grid-area:image8;
+}
+.image9{
+    grid-area:image9;
+}
+.image10{
+    grid-area:image10;
+}
+.image12{
+    grid-area:image12;
+}
+.image13{
+    grid-area:image13;
+}.image14{
+    grid-area:image14;
+}
+.image15{
+    grid-area:image15;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "logo register"
+        "logement activities";
+}
 
-*{
-    font-size: 16px;
-  
-}
-@media all and (max-width: 980px){
-aside {
+form div {
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-content: center;
-    align-content: space-around;
 }
-main article section {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-content: space-around;
-}
-footer {
-    background-color: #f2f2f2;
-}
+
+aside{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "image1"
+                        "image2"
+                        "image3";
 }

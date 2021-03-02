@@ -1,0 +1,5 @@
+nav {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    grid-template-areas: "logo logement activities register";
+}
