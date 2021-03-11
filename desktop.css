@@ -1,11 +1,45 @@
+.logo {
+    grid-area: logo;
+    width: 50%;
+    padding-left: 10px;
+}
+.register {
+    grid-area: register;
+    padding-right: 10px;
+    text-align: right;
+    color: #0065fc;
+}
+.activities {
+    grid-area: activities;
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+}
+.logement {
+    grid-area: logement;
+    display: block;
+    color: #0065fc;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    border-top: 2px solid #0065fc;
+    text-align: center;
+    border-bottom: none;
+}
+form div button {
+    width: 80px;
+}
+form div button span {
+    font-weight: bold;
+}
 .fas.fa-search.search-icon {
     display: none;
 }
 .search-content {
     display: block;
 }
-nav {
-}
+
 main {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: none;

@@ -4,17 +4,32 @@ nav {
     grid-template-areas: "logo logement activities register";
 }
 .logo {
-    width: 70%;
     padding-left: 10px;
 }
 .register {
     padding-left: 0px;
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    align-self: unset;
 }
 .activities {
     padding-right: 0px;
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
 }
 .logement {
     padding-left: 0px;
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
 }
 form div {
     width: 60%;

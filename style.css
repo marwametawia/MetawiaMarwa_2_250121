@@ -38,6 +38,7 @@ body {
     line-height: 30px;
     height: 30px;
     border-bottom: 2px solid #0065fc;
+    text-align: center;
 }
 .titredodo {
     grid-area: titredodo;
@@ -113,6 +114,10 @@ body {
 .image15 {
     grid-area: image15;
 }
+header h1,
+h2 {
+    padding: 1rem;
+}
 
 form div {
     padding: 0 10px;
@@ -136,13 +141,47 @@ form div button {
 }
 form div input {
     border: none;
-    width: calc(100% - 100px);
+    width: calc(100% - 80px);
     padding: 0 1rem;
     border-bottom: 1px solid #f2f2f2;
     border-top: 1px solid #f2f2f2;
 }
 .search-content {
     display: none;
+}
+
+.filtre {
+    padding: 1rem;
+    display: inline-block;
+}
+
+.eco,
+.famille,
+.romantique,
+.animaux {
+    border-radius: 15px;
+    border: 1px solid silver;
+}
+.fas.fa-money-bill-wave,
+.fas.fa-male,
+.fas.fa-heart,
+.fas.fa-dog {
+    height: 30px;
+    width: 30px;
+    color: #0065fc;
+    background-color: #d8e8ff;
+    border-radius: 50%;
+    margin: -1px;
+    line-height: 30px;
+}
+.fas.fa-info {
+    border-radius: 50%;
+    border: 1px solid #0065fc;
+    color: #0065fc;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
 }
 nav {
     display: grid;
@@ -152,8 +191,8 @@ nav {
         "logement activities";
 }
 
-header p {
-    padding-left: 10px;
+header span {
+    padding: 0 1rem;
 }
 
 main {
@@ -164,7 +203,6 @@ main {
         "dodo"
         "act";
     gap: 10px;
-    margin: 10px;
 }
 
 .pop {
@@ -179,8 +217,43 @@ main {
     gap: 20px;
     padding: 20px;
     background-color: #f2f2f2;
-    border-radius: 30px;
 }
+.titrepop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop a {
+    border-radius: 20px;
+    box-shadow: 0 2px 5px silver;
+    padding: 5px;
+    background-color: white;
+}
+.pop a figure {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.pop a figure figcaption {
+    width: 60%;
+    padding: 10px;
+    position: relative;
+    color: black;
+}
+.pop a figure figcaption div {
+    position: absolute;
+    bottom: 10px;
+    color: #0065fc;
+}
+
+.pop a figure img {
+    object-fit: cover;
+    width: 40%;
+    border-radius: 10px;
+}
+
 .dodo {
     display: grid;
     grid-template-columns: 1fr;
@@ -197,6 +270,43 @@ main {
     padding: 20px;
     gap: 20px;
 }
+.dodo a {
+    border-radius: 20px;
+    box-shadow: 0 2px 5px silver;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+
+.dodo a figure {
+    border-radius: 20px;
+    height: 100%;
+}
+
+.dodo a figure figcaption {
+    height: 50px;
+    padding: 5px;
+    position: relative;
+    color: black;
+}
+.dodo a figure figcaption div {
+    position: absolute;
+    color: #0065fc;
+    bottom: 0;
+}
+
+.dodo a figure img {
+    height: calc(100% - 70px);
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.afficherplus {
+    font-weight: bold;
+    font-size:large;
+}
+
 .act {
     display: grid;
     grid-template-columns: 1fr;
@@ -213,72 +323,36 @@ main {
     gap: 20px;
 }
 
-footer {
-    padding: 20px;
-    gap: 20px;
-    background-color: #f2f2f2;
-}
-header h1,
-h2 {
-    padding: 1rem;
-}
-
-main a {
-    border-radius: 30px;
-    box-shadow: 5px 5px #f2f2f2;
+.act a {
+    border-radius: 20px;
+    box-shadow: 0 2px 5px silver;
     padding: 5px;
     background-color: white;
-}
-main figure {
-    border-radius: 30px;
-    padding: 10px;
-}
-
-main img {
-    border-radius: 10px;
-    padding: 5px;
-}
-
-main article {
-    border-radius: 20px;
+    color: black;
 }
 .act a figure {
     height: 100%;
+    border-radius: 20px;
 }
 
 .act a figure figcaption {
     height: 50px;
+    color: black;
 }
 
 .act a figure img {
     height: calc(100% - 50px);
     object-fit: cover;
     width: 100%;
-}
-.dodo a figure {
-    height: 100%;
+    border-radius: 10px;
 }
 
-.dodo a figure figcaption {
-    height: 50px;
+footer {
+    padding: 20px;
+    gap: 20px;
+    background-color: #f2f2f2;
 }
 
-.dodo a figure img {
-    height: calc(100% - 50px);
-    object-fit: cover;
-    width: 100%;
-}
-.pop a figure {
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-.pop a figure figcaption {
-    width: 60%;
-}
-
-.pop a figure img {
-    object-fit: cover;
-    width: 40%;
+footer ul {
+    margin: 10px 0;
 }
