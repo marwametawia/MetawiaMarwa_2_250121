@@ -98,3 +98,6 @@ main {
 .act a figure {
     border-radius: 10px 10px 0 0;
 }
+.act a figure figcaption {
+    padding: 10px;
+}
