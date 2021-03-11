@@ -46,10 +46,18 @@ main {
     grid-template-areas:
         "dodo pop"
         "act act";
+    padding: 20px;
 }
 
 .pop {
     padding: 20px;
+    border-radius: 20px;
+}
+.pop a figure img {
+    border-radius: 10px 0 0 10px;
+}
+.pop a figure {
+    border-radius: 10px 0 0 10px;
 }
 .dodo {
     grid-template-columns: repeat(3, 1fr);
@@ -61,6 +69,14 @@ main {
         "afficherplus afficherplus afficherplus";
     padding: 20px;
     gap: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+.dodo a figure img {
+    border-radius: 10px 10px 0 0;
+}
+.dodo a figure {
+    border-radius: 10px 10px 0 0;
 }
 
 .act {
@@ -73,19 +89,12 @@ main {
     padding: 20px;
     gap: 20px;
 }
-.pop a figure {
-    display: flex;
+.act a {
+    padding: 0;
 }
-
-.pop a figure figcaption {
-    padding-top: 20px;
-    width: 60%;
+.act a figure img {
+    border-radius: 10px 10px 0 0;
 }
-
-.pop a figure img {
-    object-fit: cover;
-    width: 40%;
-}
-form div {
-    width: 40%;
+.act a figure {
+    border-radius: 10px 10px 0 0;
 }
