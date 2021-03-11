@@ -2,58 +2,129 @@
     font-size: 10px; /* 1rem */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+body {
+    font-family: Raleway, Georgia, serif;
+}
 .logo {
     grid-area: logo;
+    width: 50%;
+    padding-left: 10px;
 }
 .register {
     grid-area: register;
+    padding-left: 20px;
+    align-self: center;
+    justify-self: center;
 }
 .activities {
     grid-area: activities;
+    padding-right: 20px;
+    align-self: center;
+    justify-self: center;
 }
 .logement {
     grid-area: logement;
+    padding-left: 20px;
+    align-self: center;
+    justify-self: center;
 }
-.image1{
-    grid-area:image1;
+.titredodo {
+    grid-area: titredodo;
 }
-.image2{
-    grid-area:image2;
+.titreact {
+    grid-area: titreact;
 }
-.image3{
-    grid-area:image3;
+
+.titrepop {
+    grid-area: titrepop;
 }
-.image4{
-    grid-area:image4;
+
+.dodo {
+    grid-area: dodo;
 }
-.image5{
-    grid-area:image5;
+.afficherplus {
+    grid-area: afficherplus;
 }
-.image6{
-    grid-area:image6;
+.pop {
+    grid-area: pop;
 }
-.image7{
-    grid-area:image7;
+.act {
+    grid-area: act;
 }
-.image8{
-    grid-area:image8;
+.apropos {
+    grid-area: apropos;
 }
-.image9{
-    grid-area:image9;
+.noshebergements {
+    grid-area: noshebergements;
 }
-.image10{
-    grid-area:image10;
+.assistance {
+    grid-area: assistance;
 }
-.image12{
-    grid-area:image12;
+.image1 {
+    grid-area: image1;
 }
-.image13{
-    grid-area:image13;
-}.image14{
-    grid-area:image14;
+.image2 {
+    grid-area: image2;
 }
-.image15{
-    grid-area:image15;
+.image3 {
+    grid-area: image3;
+}
+.image4 {
+    grid-area: image4;
+}
+.image5 {
+    grid-area: image5;
+}
+.image6 {
+    grid-area: image6;
+}
+.image7 {
+    grid-area: image7;
+}
+.image8 {
+    grid-area: image8;
+}
+.image9 {
+    grid-area: image9;
+}
+.image10 {
+    grid-area: image10;
+}
+.image12 {
+    grid-area: image12;
+}
+.image13 {
+    grid-area: image13;
+}
+.image14 {
+    grid-area: image14;
+}
+.image15 {
+    grid-area: image15;
+}
+label {
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+button {
+    border-radius: 10px;
+}
+input {
+    border: none;
+    width: calc(100% - 100px);
+}
+.search-content {
+    display: none;
 }
 nav {
     display: grid;
@@ -62,17 +133,138 @@ nav {
     grid-template-areas:
         "logo register"
         "logement activities";
+    border-bottom: solid blue;
 }
-
-form div {
+! form div {
     display: flex;
 }
+form div {
+    padding-left: 15px;
+}
 
-aside{
+header p {
+    padding-left: 15px;
+}
+
+main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "image1"
-                        "image2"
-                        "image3";
+    grid-template-areas:
+        "pop"
+        "dodo"
+        "act";
+    gap: 10px;
+    margin: 10px;
+}
+
+.pop {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(3, 150px);
+    grid-template-areas:
+        "titrepop"
+        "image1"
+        "image2"
+        "image3";
+    gap: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+}
+.dodo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(6, 200px) 50px;
+    grid-template-areas:
+        "titredodo"
+        "image4"
+        "image5"
+        "image6"
+        "image7"
+        "image8"
+        "image9"
+        "afficherplus";
+    padding: 20px;
+    gap: 20px;
+}
+.act {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(6, 200px);
+    grid-template-areas:
+        "titreact"
+        "image10"
+        "image11"
+        "image12"
+        "image13"
+        "image14"
+        "image15";
+    padding: 20px;
+    gap: 20px;
+}
+
+footer {
+    padding: 20px;
+    gap: 20px;
+    background-color: #f2f2f2;
+}
+
+main a {
+    border-radius: 30px;
+    box-shadow: 5px 5px #f2f2f2;
+    padding: 5px;
+    background-color: white;
+}
+main figure {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+main img {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+main article {
+    border-radius: 20px;
+}
+.act a figure {
+    height: 100%;
+}
+
+.act a figure figcaption {
+    height: 50px;
+}
+
+.act a figure img {
+    height: calc(100% - 50px);
+    object-fit: cover;
+    width: 100%;
+}
+.dodo a figure {
+    height: 100%;
+}
+
+.dodo a figure figcaption {
+    height: 50px;
+}
+
+.dodo a figure img {
+    height: calc(100% - 50px);
+    object-fit: cover;
+    width: 100%;
+}
+.pop a figure {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.pop a figure figcaption {
+    width: 60%;
+}
+
+.pop a figure img {
+    object-fit: cover;
+    width: 40%;
 }

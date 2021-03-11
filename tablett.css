@@ -3,3 +3,65 @@ nav {
     grid-template-rows: none;
     grid-template-areas: "logo logement activities register";
 }
+.logo {
+    width: 70%;
+    padding-left: 10px;
+}
+.register {
+    padding-left: 0px;
+}
+.activities {
+    padding-right: 0px;
+}
+.logement {
+    padding-left: 0px;
+}
+form div {
+    width: 60%;
+}
+
+main {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "dodo pop"
+        "act act";
+}
+.pop {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "titrepop"
+        "image1"
+        "image2"
+        "image3";
+}
+
+.dodo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px repeat(3, 200px) 50px;
+    grid-template-areas:
+        "titredodo titredodo"
+        "image4 image5"
+        "image6 image7"
+        "image8 image9"
+        "afficherplus afficherplus";
+}
+
+.act {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px repeat(3, 200px);
+    grid-template-areas:
+        "titreact titreact"
+        "image10 image11"
+        "image12 image13"
+        "image14 image15";
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+    grid-template-areas: "apropos noshebergements assistance";
+    padding: 20px;
+}

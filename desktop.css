@@ -1,0 +1,57 @@
+.fas.fa-search.search-icon {
+    display: none;
+}
+.search-content {
+    display: block;
+}
+nav {
+}
+main {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: none;
+    grid-template-areas:
+        "dodo pop"
+        "act act";
+}
+
+.pop {
+    padding: 20px;
+}
+.dodo {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 200px 200px 50px;
+    grid-template-areas:
+        "titredodo titredodo titredodo"
+        "image4 image5 image6"
+        "image7 image8 image9"
+        "afficherplus afficherplus afficherplus";
+    padding: 20px;
+    gap: 20px;
+}
+
+.act {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 200px 200px;
+    grid-template-areas:
+        "titreact titreact titreact titreact"
+        "image10 image11 image12 image13"
+        "image10 image14 image12 image15";
+    padding: 20px;
+    gap: 20px;
+}
+.pop a figure {
+    display: flex;
+}
+
+.pop a figure figcaption {
+    padding-top: 20px;
+    width: 60%;
+}
+
+.pop a figure img {
+    object-fit: cover;
+    width: 40%;
+}
+form div {
+    width: 40%;
+}
