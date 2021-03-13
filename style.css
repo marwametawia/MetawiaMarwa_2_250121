@@ -40,6 +40,7 @@ body {
     border-bottom: 2px solid #0065fc;
     text-align: center;
 }
+
 .titredodo {
     grid-area: titredodo;
 }
