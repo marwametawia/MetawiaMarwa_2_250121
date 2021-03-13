@@ -37,7 +37,6 @@ body {
     width: 100%;
     line-height: 30px;
     height: 30px;
-    border-bottom: 2px solid #0065fc;
     text-align: center;
 }
 
@@ -119,7 +118,12 @@ header h1,
 header h2 {
     padding: 1rem;
 }
-
+a.logement:hover,
+a.register:hover,
+a.activities:hover {
+    border-bottom: 2px solid #0065fc;
+    cursor: pointer;
+}
 form div {
     padding: 0 10px;
     display: flex;

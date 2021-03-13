@@ -23,14 +23,30 @@
     width: 100%;
     line-height: 30px;
     height: 30px;
-    border-top: 2px solid #0065fc;
     text-align: center;
+}
+a.logement:hover,
+a.register:hover,
+a.activities:hover {
     border-bottom: none;
+    border-top: 2px solid #0065fc;
+    cursor: pointer;
+}
+
+a.bouton1:hover,
+a.bouton2:hover,
+a.bouton3:hover,
+a.bouton4:hover {
+    color: #0065fc;
+    font-style: oblique;
+    font-size: 15px;
+    transition-duration: 2s;
 }
 
 form div button {
     width: 80px;
 }
+
 form div button span {
     font-weight: bold;
 }
