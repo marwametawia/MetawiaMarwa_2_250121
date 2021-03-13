@@ -189,6 +189,9 @@ form div input {
     line-height: 20px;
     text-align: center;
 }
+header p {
+    margin: 10px;
+}
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
