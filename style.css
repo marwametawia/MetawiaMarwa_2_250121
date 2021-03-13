@@ -368,6 +368,6 @@ footer ul {
     margin: 10px 0;
 }
 
-footer ul li {
+footer ul li a {
     color: black;
 }
